@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Avi Sharma</title>
     <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
+    <title> Avi Sharma</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css"/>
 
 
@@ -42,28 +44,83 @@
         <h1 class="header_title">Hi ! I'm   Avi-sharma</h1>
         <h3 class='header_sub_title'> A web Developer</h3>
         <div class='header_btn'>
-          <a href="#about" class="whoami" >Who am I</a>
+          <a href="#" class="whoami" >Who am I</a>
         </div>
       </div>
     </header>
-    <nav>
-        <h1>nav Section</h1>
-    </nav>
-    <section id='about' class="about_section">
-        <h1>My name is Avinash sharma</h1>
-       <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis explicabo asperiores non repudiandae nobis hic adipisci excepturi. Omnis eveniet facere expedita excepturi optio amet voluptas natus ab mollitia laborum? </p>
-       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, et necessitatibus explicabo minus eos cum? Maiores eaque vitae id, omnis nobis porro nihil culpa dicta et, laborum animi dolorem facilis?</p>
-    </section>
 
-    <section>
-        <h1>skill</h1>
-    </section>
-    <section>
-        <h1>project</h1>
-    </section>
-    <footer>
-        <h1>Contact section</h1>
-    </footer>
+    <!-- nav bar section -->
+
+
+  <nav id="navbar">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i style="font-size:24px" class="fa">&#xf039;</i>
+    </label>
+      <label class="logo" >Avi Sharma</label>
+      <ul>
+
+        <li ><a href="#">About</a></li>
+        <li ><a href="#">Skills</a></li>
+        <li ><a href="#">Projects</a></li>
+        <li ><a href="#">Contact</a></li>
+      </ul>
+  </nav>
+<section>
+  <div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur vero minus provident eligendi facilis sunt esse repellat tempore enim, nisi, animi veritatis. Ducimus molestiae excepturi consequatur minima non eveniet?</h1>
+  </div>
+  <div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur vero minus provident eligendi facilis sunt esse repellat tempore enim, nisi, animi veritatis. Ducimus molestiae excepturi consequatur minima non eveniet?</h1>
+  </div>
+  <div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur vero minus provident eligendi facilis sunt esse repellat tempore enim, nisi, animi veritatis. Ducimus molestiae excepturi consequatur minima non eveniet?</h1>
+  </div>
+  <div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur vero minus provident eligendi facilis sunt esse repellat tempore enim, nisi, animi veritatis. Ducimus molestiae excepturi consequatur minima non eveniet?</h1>
+  </div>
+  <div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur vero minus provident eligendi facilis sunt esse repellat tempore enim, nisi, animi veritatis. Ducimus molestiae excepturi consequatur minima non eveniet?</h1>
+  </div>
+  <div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur vero minus provident eligendi facilis sunt esse repellat tempore enim, nisi, animi veritatis. Ducimus molestiae excepturi consequatur minima non eveniet?</h1>
+  </div><div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur vero minus provident eligendi facilis sunt esse repellat tempore enim, nisi, animi veritatis. Ducimus molestiae excepturi consequatur minima non eveniet?</h1>
+  </div>
+  <div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur vero minus provident eligendi facilis sunt esse repellat tempore enim, nisi, animi veritatis. Ducimus molestiae excepturi consequatur minima non eveniet?</h1>
+  </div>
+  <div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur vero minus provident eligendi facilis sunt esse repellat tempore enim, nisi, animi veritatis. Ducimus molestiae excepturi consequatur minima non eveniet?</h1>
+  </div>
+  <div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur vero minus provident eligendi facilis sunt esse repellat tempore enim, nisi, animi veritatis. Ducimus molestiae excepturi consequatur minima non eveniet?</h1>
+  </div>
+  <div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur vero minus provident eligendi facilis sunt esse repellat tempore enim, nisi, animi veritatis. Ducimus molestiae excepturi consequatur minima non eveniet?</h1>
+  </div>
+  <div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur vero minus provident eligendi facilis sunt esse repellat tempore enim, nisi, animi veritatis. Ducimus molestiae excepturi consequatur minima non eveniet?</h1>
+  </div>
+
+   </section>
+   
+   
     
 </body>
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+  
 </html>

@@ -1,3 +1,5 @@
-## My Portfolio...
+## My Portfolio
 
-### Avinash kumar sharma
+### adding nav bar section v1.01
+
+### adding header v1.0
