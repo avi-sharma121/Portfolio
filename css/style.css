@@ -133,6 +133,14 @@ header {
 
 /* Nav Section */
 
+.title_tag {
+  text-align: center;
+  padding: 3rem;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: "Sinethar";
+}
+
 #navbar {
   overflow: hidden;
   position: sticky;
@@ -316,5 +324,282 @@ nav a:hover {
   }
   .about_container {
     grid-area: about_area;
+  }
+}
+
+/* skill_section */
+
+.skill_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 3rem;
+  grid-template-areas:
+    "skl1 skl2"
+    "skl3 skl4";
+}
+
+.skl1 {
+  background-color: blue;
+  grid-area: skl1;
+}
+
+.skl2 {
+  background-color: yellow;
+  grid-area: skl2;
+}
+
+.skl3 {
+  background-color: red;
+  grid-area: skl3;
+}
+.skl4 {
+  background-color: yellowgreen;
+  grid-area: skl4;
+}
+
+.card_skill {
+  height: 3rem;
+  background-color: #646464;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+  .skill_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 1rem;
+    grid-template-areas:
+      "skl1"
+      "skl2"
+      "skl3"
+      "skl4";
+  }
+
+  .skl1 {
+    background-color: blue;
+    grid-area: skl1;
+  }
+
+  .skl2 {
+    background-color: yellow;
+    grid-area: skl2;
+  }
+
+  .skl3 {
+    background-color: red;
+    grid-area: skl3;
+  }
+  .skl4 {
+    background-color: yellowgreen;
+    grid-area: skl4;
+  }
+}
+
+/*  project_section */
+
+.card {
+  width: 100%;
+  height: 50rem;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.5rem;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.card .img1_layout {
+  height: 50rem;
+  width: 450;
+  background-size: cover;
+  position: relative;
+}
+
+.project_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "box2 box2 box1 box1 box1"
+    "box3 box3 box1 box1 box1"
+    "box4 box5 box6 box7 box8";
+}
+
+.box_layout1 {
+  background-color: rebeccapurple;
+  grid-area: box1;
+}
+
+.box_layout2 {
+  background-color: red;
+  grid-area: box2;
+}
+
+.box_layout3 {
+  background-color: yellow;
+  grid-area: box3;
+}
+
+.box_layout4 {
+  background-color: orange;
+  grid-area: box4;
+}
+
+.box_layout5 {
+  background-color: green;
+  grid-area: box5;
+}
+
+.box_layout6 {
+  background-color: gray;
+  grid-area: box6;
+}
+
+.box_layout7 {
+  background-color: rgb(60, 86, 235);
+  grid-area: box7;
+}
+
+.box_layout8 {
+  background-color: rgb(184, 240, 56);
+  grid-area: box8;
+}
+
+@media screen and (max-width: 1000px) {
+  .project_section {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "box2 box1 box1"
+      "box2 box1 box1"
+      "box3 box4 box4"
+      "box3 box4 box4"
+      "box5 box6 box7"
+      "box8 box8 box8";
+  }
+
+  .box_layout1 {
+    background-color: rebeccapurple;
+    grid-area: box1;
+    width: 100%;
+    position: relative;
+  }
+
+  .box_layout2 {
+    background-color: red;
+    grid-area: box2;
+    width: 100%;
+  }
+
+  .box_layout3 {
+    background-color: yellow;
+    grid-area: box3;
+    width: 100%;
+  }
+
+  .box_layout4 {
+    background-color: orange;
+    grid-area: box4;
+    width: 100%;
+  }
+
+  .box_layout5 {
+    background-color: green;
+    grid-area: box5;
+    width: 100%;
+  }
+
+  .box_layout6 {
+    background-color: gray;
+    grid-area: box6;
+    width: 100%;
+  }
+
+  .box_layout7 {
+    background-color: rgb(60, 86, 235);
+    grid-area: box7;
+    width: 100%;
+  }
+
+  .box_layout8 {
+    background-color: rgb(184, 240, 56);
+    grid-area: box8;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .project_section {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6"
+      "box7"
+      "box8";
+  }
+
+  .box_layout1 {
+    background-color: rebeccapurple;
+    grid-area: box1;
+    width: 100%;
+  }
+
+  .box_layout2 {
+    background-color: red;
+    grid-area: box2;
+    width: 100%;
+  }
+
+  .box_layout3 {
+    background-color: yellow;
+    grid-area: box3;
+    width: 100%;
+  }
+
+  .box_layout4 {
+    background-color: orange;
+    grid-area: box4;
+    width: 100%;
+  }
+
+  .box_layout5 {
+    background-color: green;
+    grid-area: box5;
+    width: 100%;
+  }
+
+  .box_layout6 {
+    background-color: gray;
+    grid-area: box6;
+    width: 100%;
+  }
+
+  .box_layout7 {
+    background-color: rgb(60, 86, 235);
+    grid-area: box7;
+    width: 100%;
+  }
+
+  .box_layout8 {
+    background-color: rgb(184, 240, 56);
+    grid-area: box8;
+    width: 100%;
   }
 }
