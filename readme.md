@@ -1,5 +1,7 @@
 ## My Portfolio
 
+### desing the skill section and title v1.05
+
 ### desing the skill section v1.04
 
 ### adding skill section v1.03
