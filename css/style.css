@@ -257,6 +257,7 @@ nav a:hover {
   height: 1px;
   background: black;
   transition: width 2s;
+  margin-top: 5px;
 }
 
 #about h2::after {
@@ -402,6 +403,7 @@ nav a:hover {
   width: 80%;
   margin: auto;
 }
+
 .skl4 {
   grid-area: skl4;
   width: 80%;
@@ -438,6 +440,7 @@ nav a:hover {
 .img_pixal2 {
   background-position: 0 90px;
 }
+
 .img_pixal3 {
   background-position: 90px 0;
 }
@@ -470,6 +473,7 @@ nav a:hover {
   .skl1 {
     grid-area: skl1;
     width: 100%;
+    margin: auto;
   }
 
   .skl2 {
@@ -492,6 +496,14 @@ nav a:hover {
 
 /*  project_section */
 
+section .project_section {
+  margin: 5rem;
+}
+
+.pro_btn {
+  color: white;
+}
+
 #project h2::after {
   content: "";
   position: absolute;
@@ -512,24 +524,20 @@ nav a:hover {
 
 .card {
   width: 100%;
-  height: 50rem;
-  color: white;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  height: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 1rem 0.5rem;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.4s ease;
-}
-
-.card .img1_layout {
-  height: 50rem;
-  width: 450;
   background-size: cover;
   position: relative;
+}
+
+.card:hover {
+  opacity: 1;
 }
 
 .project_section {
@@ -543,46 +551,165 @@ nav a:hover {
 }
 
 .box_layout1 {
-  background-color: rebeccapurple;
+  display: flex;
+  padding-top: 10rem;
+
+  color: white;
   grid-area: box1;
+  background: repeating-linear-gradient(
+    110.28deg,
+    #ff0055 0%,
+    #333 49.1%,
+    #000066 81.93%
+  );
+  background-size: cover;
 }
 
 .box_layout2 {
-  background-color: red;
+  color: white;
+  background: linear-gradient(
+    123deg,
+    #461b93 0%,
+    #461b93 40%,
+    #6a3cbc calc(40% + 1px),
+    #6a3cbc 60%,
+    #8253d7 calc(60% + 1px),
+    #8253d7 70%,
+    #f78f1e calc(70% + 1px),
+    #f78f1e 100%
+  );
   grid-area: box2;
 }
 
 .box_layout3 {
-  background-color: yellow;
+  color: white;
+  background: repeating-linear-gradient(
+    59.25deg,
+    #17d579 0%,
+    #ff0055 0%,
+    #333 3.040540540540541%,
+    #333 7.77027027027027%,
+    #333 51%,
+    #333 49.1%,
+    #333 51%,
+    #000066 81.93%
+  );
   grid-area: box3;
 }
 
 .box_layout4 {
-  background-color: orange;
+  color: white;
+  background: linear-gradient(115deg, #000000 0%, #00c508 55%, #000000 100%),
+    linear-gradient(115deg, #0057ff 0%, #020077 100%),
+    conic-gradient(from 110deg at -5% 35%, #000000 0deg, #faff00 360deg),
+    conic-gradient(
+      from 220deg at 30% 30%,
+      #ff0000 0deg,
+      #0000ff 220deg,
+      #240060 360deg
+    ),
+    conic-gradient(
+      from 235deg at 60% 35%,
+      #0089d7 0deg,
+      #0000ff 180deg,
+      #240060 360deg
+    );
+  background-blend-mode: soft-light, soft-light, overlay, screen, normal;
   grid-area: box4;
 }
 
 .box_layout5 {
-  background-color: green;
+  color: white;
+  background: linear-gradient(
+    70deg,
+    #f9ed69 0%,
+    #f9ed69 40%,
+    #f08a5d calc(40% + 1px),
+    #f08a5d 60%,
+    #b83b5e calc(60% + 1px),
+    #b83b5e 70%,
+    #6a2c70 calc(70% + 1px),
+    #6a2c70 100%
+  );
   grid-area: box5;
 }
 
 .box_layout6 {
-  background-color: gray;
+  color: white;
+  background: linear-gradient(
+    56deg,
+    rgb(255, 180, 172) 0%,
+    rgb(255, 180, 172) 40%,
+    rgb(103, 145, 134) calc(40% + 1px),
+    rgb(103, 145, 134) 50%,
+    rgb(38, 78, 112) calc(50% + 1px),
+    rgb(38, 78, 112) 70%,
+    rgb(255, 235, 211) calc(70% + 1px),
+    rgb(255, 235, 211) 100%
+  );
   grid-area: box6;
 }
 
 .box_layout7 {
-  background-color: rgb(60, 86, 235);
+  color: white;
+  background: linear-gradient(
+    65deg,
+    rgb(7, 26, 82) 3%,
+    rgb(7, 26, 82) 40%,
+    rgb(8, 105, 114) calc(40% + 1px),
+    rgb(8, 105, 114) 60%,
+    rgb(23, 185, 120) calc(60% + 1px),
+    rgb(23, 185, 120) 68%,
+    rgb(167, 255, 131) calc(68% + 1px),
+    rgb(167, 255, 131) 100%
+  );
   grid-area: box7;
 }
 
 .box_layout8 {
-  background-color: rgb(184, 240, 56);
+  color: white;
+  background: linear-gradient(125deg, #ffffff 0%, #000000 100%),
+    linear-gradient(
+      200deg,
+      #ffd9e8 0%,
+      #ffd9e8 50%,
+      #de95ba calc(50% + 1px),
+      #de95ba 60%,
+      #7f4a88 calc(60% + 1px),
+      #7f4a88 75%,
+      #4a266a calc(75% + 1px),
+      #4a266a 100%
+    ),
+    linear-gradient(
+      113deg,
+      #ffd9e8 0%,
+      #ffd9e8 40%,
+      #de95ba calc(40% + 1px),
+      #de95ba 50%,
+      #7f4a88 calc(50% + 1px),
+      #7f4a88 70%,
+      #4a266a calc(70% + 1px),
+      #4a266a 100%
+    );
+  background-blend-mode: overlay, overlay, normal;
   grid-area: box8;
 }
 
 @media screen and (max-width: 1000px) {
+  .card {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.8rem 0.3rem;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background-size: cover;
+    position: relative;
+  }
+
   .project_section {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -597,60 +724,61 @@ nav a:hover {
   }
 
   .box_layout1 {
-    background-color: rebeccapurple;
     grid-area: box1;
+    padding-top: 5rem;
     width: 100%;
-    position: relative;
   }
 
   .box_layout2 {
-    background-color: red;
     grid-area: box2;
+    padding-top: 5rem;
     width: 100%;
   }
 
   .box_layout3 {
-    background-color: yellow;
     grid-area: box3;
+    padding-top: 5rem;
     width: 100%;
   }
 
   .box_layout4 {
-    background-color: orange;
     grid-area: box4;
+    padding-top: 5rem;
     width: 100%;
   }
 
   .box_layout5 {
-    background-color: green;
     grid-area: box5;
     width: 100%;
   }
 
   .box_layout6 {
-    background-color: gray;
     grid-area: box6;
     width: 100%;
   }
 
   .box_layout7 {
-    background-color: rgb(60, 86, 235);
     grid-area: box7;
     width: 100%;
   }
 
   .box_layout8 {
-    background-color: rgb(184, 240, 56);
     grid-area: box8;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 650px) {
+  section .project_section {
+    margin: auto;
+  }
+
   .project_section {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
+    row-gap: 2rem;
+    width: 90%;
+    align-self: center;
     grid-template-areas:
       "box1"
       "box2"
@@ -663,50 +791,51 @@ nav a:hover {
   }
 
   .box_layout1 {
-    background-color: rebeccapurple;
     grid-area: box1;
-    width: 100%;
+    margin-top: 10px;
+    padding-top: 3rem;
+    width: 300%;
   }
 
   .box_layout2 {
-    background-color: red;
     grid-area: box2;
-    width: 100%;
+    padding-top: 3rem;
+    width: 300%;
   }
 
   .box_layout3 {
-    background-color: yellow;
     grid-area: box3;
-    width: 100%;
+    padding-top: 3rem;
+    width: 300%;
   }
 
   .box_layout4 {
-    background-color: orange;
     grid-area: box4;
-    width: 100%;
+    padding-top: 3rem;
+    width: 300%;
   }
 
   .box_layout5 {
-    background-color: green;
     grid-area: box5;
-    width: 100%;
+    padding-top: 3rem;
+    width: 300%;
   }
 
   .box_layout6 {
-    background-color: gray;
     grid-area: box6;
-    width: 100%;
+    padding-top: 3rem;
+    width: 300%;
   }
 
   .box_layout7 {
-    background-color: rgb(60, 86, 235);
     grid-area: box7;
-    width: 100%;
+    padding-top: 3rem;
+    width: 300%;
   }
 
   .box_layout8 {
-    background-color: rgb(184, 240, 56);
     grid-area: box8;
-    width: 100%;
+    padding-top: 3rem;
+    width: 300%;
   }
 }

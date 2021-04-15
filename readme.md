@@ -1,8 +1,10 @@
 ## My Portfolio
 
-### desing the skill section and title v1.05
+### design the project section and responsive issue also v1.06
 
-### desing the skill section v1.04
+### design the skill section and title v1.05
+
+### design the skill section v1.04
 
 ### adding skill section v1.03
 
