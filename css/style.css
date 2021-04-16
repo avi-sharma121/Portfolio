@@ -920,6 +920,9 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
+  body {
+    background-color: tomato;
+  }
   footer {
     background-color: #646464;
     margin-top: 10px;
@@ -942,7 +945,7 @@ footer {
 
   .social_card {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 10rem;
     width: 100%;
@@ -951,7 +954,7 @@ footer {
   .form_data {
     display: flex;
     justify-content: center;
-    padding: 0 4rem;
+    padding: 0 1rem;
     flex-direction: column;
     align-items: center;
     margin: 5px;

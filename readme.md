@@ -1,5 +1,7 @@
 ## My Portfolio
 
+### modify the design of conntact details v1.09
+
 ### modify the design of conntact details v1.08
 
 ### adding contact section and with some design v1.07
