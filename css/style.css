@@ -966,4 +966,18 @@ footer {
     width: 8rem;
     border-radius: 20px;
   }
+
+  .form_data input {
+    width: 290px;
+    height: 40px;
+    padding-bottom: 5px;
+  }
+  .form_data .contact_btn {
+    overflow: hidden;
+    margin-top: 10px;
+    font-size: larger;
+    width: 200px;
+    height: 40px;
+    padding-bottom: 5px;
+  }
 }
