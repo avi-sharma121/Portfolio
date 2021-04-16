@@ -1,5 +1,7 @@
 ## My Portfolio
 
+### modify the design of conntact details v1.08
+
 ### adding contact section and with some design v1.07
 
 ### design the project section and responsive issue also v1.06
