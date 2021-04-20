@@ -553,7 +553,6 @@ section .project_section {
 .box_layout1 {
   display: flex;
   padding-top: 10rem;
-
   color: white;
   grid-area: box1;
   background: repeating-linear-gradient(
@@ -876,6 +875,7 @@ footer {
 .contact_section {
   grid-area: contact;
 }
+
 .social_section {
   grid-area: social;
 }
@@ -908,11 +908,9 @@ footer {
 .form_data input {
   margin: 5px;
 }
-
 .contact_btn {
   height: 2.5rem;
   width: 8rem;
-  border-radius: 20px;
 }
 .contact_btn:hover {
   background-color: white;
@@ -964,7 +962,6 @@ footer {
   .contact_btn {
     height: 2rem;
     width: 8rem;
-    border-radius: 20px;
   }
 
   .form_data input {
