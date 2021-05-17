@@ -134,6 +134,7 @@ header {
 /* Nav Section */
 
 #navbar {
+  z-index: 9999;
   overflow: hidden;
   position: sticky;
   background-color: #2f2f2f;
@@ -234,7 +235,15 @@ nav a:hover {
     left: -100%;
   }
 
-  #check:checked ~ ul {
+  /*#check:checked ~ ul {
+    left: 0;
+  }
+  .close:checked {
+    left: 0;
+  }
+  */
+
+  .close ul {
     left: 0;
   }
 }
@@ -423,6 +432,18 @@ nav a:hover {
 
 .card_skill:hover {
   transform: scale(1.03);
+}
+.card_skill_hower1:hover {
+  box-shadow: 0 0.5rem 1rem rgba(250, 0, 93, 0.6);
+}
+.card_skill_hower2:hover {
+  box-shadow: 0 0.5rem 1rem rgba(167, 0, 255, 0.6);
+}
+.card_skill_hower3:hover {
+  box-shadow: 0 0.5rem 1rem rgba(25, 152, 251, 0.6);
+}
+.card_skill_hower4:hover {
+  box-shadow: 0 0.5rem 1rem rgba(108, 211, 51, 0.7);
 }
 
 .card_skill_icon {

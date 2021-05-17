@@ -9,8 +9,10 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css"/>
-
-
+    
+      
+  
+<script src="./js/script.js"></script>
     <style>
         @font-face {
           font-family: "PantonRustScrSmBold-Gr";
@@ -24,6 +26,8 @@
           src: url("fonts/PantonRustHeavy-GrSh.ttf") format("truetype");
           font-style: normal;
           
+
+
         }
         @font-face {
           font-family: 'Sinethar';
@@ -51,17 +55,17 @@
 
     <!-- nav bar section -->
 
-  <nav id="navbar">
+  <nav id="navbar" >
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
-      <i style="font-size:24px" class="fa">&#xf039;</i>
+      <i id="check_btn" style="font-size:24px" class="fa">&#xf039;</i>
     </label>
       <label class="logo" >Avi Sharma</label>
-      <ul>
-        <li ><a href="#about">About</a></li>
-        <li ><a href="#skill">Skills</a></li>
-        <li ><a href="#project">Projects</a></li>
-        <li ><a href="#">Contact</a></li>
+      <ul >
+        <li  id="about_nav"><a  href="#about">About</a></li>
+        <li id="skill_nav"><a  href="#skill">Skills</a></li>
+        <li id="pro_nav"><a  href="#project">Projects</a></li>
+        <li id="con_nav"><a  href="#contact">Contact</a></li>
       </ul>
   </nav>
      
@@ -95,7 +99,7 @@
     <h2 class="title_tag">My Skill</h2>
     <div class="skill_section">
     <div class="skl1">
-      <div class="card_skill">
+      <div class="card_skill card_skill_hower1">
       <div class='card_skill_icon img_pixal1'>
       </div>
       <div class="card_skill_text">
@@ -105,7 +109,7 @@
     </div>
 
 <div class="skl2">
-  <div class="card_skill">
+  <div class="card_skill card_skill_hower2">
   <div class='card_skill_icon img_pixal2'>
    
   </div>
@@ -116,18 +120,18 @@
 </div>
 
 <div class="skl3">
-  <div class="card_skill">
+  <div class="card_skill card_skill_hower3">
   <div class='card_skill_icon img_pixal3'>
     
   </div>
   <div class="card_skill_text">
-    Language
+    Language like C++ , JavaScript , nodeJS , Reactjs
   </div>
   </div>
 </div>
 
 <div class="skl4">
-  <div class="card_skill">
+  <div class="card_skill card_skill_hower4">
   <div class='card_skill_icon img_pixal4'>
    
   </div>
@@ -256,7 +260,7 @@
     
     <div class="social_section">
       <div class="social_card">
-        <a href="https://www.facebook.com/" target="_blank"><img src="./image/facebook-app-logo.svg" height="40px" width="40px"/></a>
+        <a  href="https://www.facebook.com/" target="_blank"><img src="./image/facebook-app-logo.svg" height="40px" width="40px"/></a>
         <a href="https://www.instagram.com/" target="_blank"><img src="./image/instagram (1).svg" height="40px" width="40px"/>
         <a href="https://www.linkedin.com/feed/" target="_blank"><img src="./image/linkedin-logo.svg" height="40px" width="40px"/>
         <a href="https://twitter.com/" target="_blank"><img src="./image/twitter-sign.svg" height="40px" width="40px"/>
@@ -267,18 +271,45 @@
 </footer>
 </body>
 <script>
-  window.onscroll = function() {myFunction()};
+  /*
+  window.onscroll = (function () {
   
+
   var navbar = document.getElementById("navbar");
+  var check_btn = document.getElementById("check_btn");
+
+  var about_nav = document.getElementById("about_nav");
+  // var ul_close = document.getElementById("ul_close");
   var sticky = navbar.offsetTop;
-  
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
+
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
   }
-  </script>
+
+  check_btn.addEventListener("click", function () {
+    if (navbar.className == "sticky") {
+      navbar.classList.add("close");
+      navbar.classList.remove("sticky");
+    } else {
+      navbar.classList.remove("close");
+      navbar.classList.add("sticky");
+    }
+  });
+
+  //    about_nav.addEventListener("click", function () {
+  //
+  //  if (check.checked == true) {
+  //    check.className="close";
+  // }
+  // else{
+  //  check.className="";
+  // }
+  //});
+  //
+})();
+*/
+</script>
   
 </html>

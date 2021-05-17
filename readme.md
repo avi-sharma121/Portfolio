@@ -1,5 +1,7 @@
 ## My Portfolio
 
+### modifying working of nav_bar v1.13
+
 ### add some working in contact v1.12
 
 ### modify the design of conntact details v1.11
