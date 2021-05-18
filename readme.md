@@ -1,5 +1,7 @@
 ## My Portfolio
 
+### background image related issue fixed v1.16
+
 ### adding project in project section v1.15
 
 ### modifying working of nav_bar v1.14

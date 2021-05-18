@@ -588,7 +588,7 @@ section .project_section {
     #000066 81.93%
   );
   */
-  background-image: url(/image/drum_kit_large.png);
+  background-image: url("image/drum_kit_large.png");
   background-size: cover;
   background-size: 100%;
   height: auto;
@@ -838,7 +838,7 @@ section .project_section {
     margin-top: 15px;
     width: 300%;
 
-    background-image: url(/image/drum_kit_small.png);
+    background-image: url("image/drum_kit_small.png");
     background-position: center;
     background-size: cover;
   }
